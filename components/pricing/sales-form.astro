@@ -1,11 +1,12 @@
 ---
+import { Image } from 'astro:assets'; // 🌟 核心修复：确保引入了 Image 组件
 import { pricingPage } from '@/data/pages';
 import Icon from '@/components/shared/icons/icon.astro';
 import Media from '@/components/shared/ui/media.astro';
 import TextRoll from '@/components/shared/ui/text-roll.astro';
 
 const copy = pricingPage.sales;
-const { fields, sizes } = copy;
+const { fields } = copy;
 const field =
   'h-13 w-full rounded-none border-0 border-b border-line-strong bg-transparent px-0 text-bone placeholder:text-dim transition-colors duration-300 focus:border-bone focus:outline-none aria-invalid:border-signal';
 ---
@@ -30,108 +31,116 @@ const field =
       data-sales-form
       data-error-name={fields.name.error}
       data-error-email={fields.email.error}
-      data-error-company={fields.company.error}
+      data-error-agentType={fields.agentType.error}
+      data-error-contactMethod={fields.contactMethod.error}
       data-sending={copy.sending}
-      data-success-free={copy.success.free}
-      data-success-demo={copy.success.demo}>
+      data-success-join={copy.success.join}>
+      
+      <!-- 1. 三个切换菜单 -->
       <fieldset>
         <legend class="font-mono text-label text-mute uppercase">{copy.intentLegend}</legend>
-        <div class="mt-4 inline-flex rounded-full border border-line bg-ink-2 p-1">
+        <div class="mt-4 inline-flex flex-wrap gap-2 rounded-full border border-line bg-ink-2 p-1">
           <label class="relative cursor-pointer">
-            <input type="radio" name="intent" value="free" class="peer sr-only" checked data-intent-input />
+            <input type="radio" name="intent" value="join" class="peer sr-only" checked data-intent-input />
             <span class="flex h-10 items-center rounded-full px-5 text-sm font-medium text-mute transition-colors duration-300 peer-checked:bg-bone peer-checked:text-ink peer-focus-visible:outline-2 peer-focus-visible:outline-signal">
-              {copy.intents.free}
+              {copy.intents.join}
             </span>
           </label>
           <label class="relative cursor-pointer">
-            <input type="radio" name="intent" value="demo" class="peer sr-only" data-intent-input />
+            <input type="radio" name="intent" value="contact" class="peer sr-only" data-intent-input />
             <span class="flex h-10 items-center rounded-full px-5 text-sm font-medium text-mute transition-colors duration-300 peer-checked:bg-bone peer-checked:text-ink peer-focus-visible:outline-2 peer-focus-visible:outline-signal">
-              {copy.intents.demo}
+              {copy.intents.contact}
+            </span>
+          </label>
+          <label class="relative cursor-pointer">
+            <input type="radio" name="intent" value="follow" class="peer sr-only" data-intent-input />
+            <span class="flex h-10 items-center rounded-full px-5 text-sm font-medium text-mute transition-colors duration-300 peer-checked:bg-bone peer-checked:text-ink peer-focus-visible:outline-2 peer-focus-visible:outline-signal">
+              {copy.intents.follow}
             </span>
           </label>
         </div>
       </fieldset>
 
-      <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-10 md:grid-cols-2" data-sales-fields>
+      <!-- 2. 加入我们：表单字段 -->
+      <div class="mt-12 grid grid-cols-1 gap-x-6 gap-y-10 md:grid-cols-2" data-join-fields>
         <div class="flex flex-col gap-2">
-          <label for="sales-name" class="text-sm text-bone">
-            {fields.name.label}
-          </label>
-          <input
-            id="sales-name"
-            name="name"
-            autocomplete="name"
-            required
-            class={field}
-            placeholder={fields.name.placeholder}
-            aria-describedby="sales-name-error"
-          />
+          <label for="sales-name" class="text-sm text-bone">{fields.name.label}</label>
+          <input id="sales-name" name="name" autocomplete="name" required class={field} placeholder={fields.name.placeholder} aria-describedby="sales-name-error" />
           <p id="sales-name-error" class="min-h-5 text-sm text-signal" data-error-for="name"></p>
         </div>
         <div class="flex flex-col gap-2">
-          <label for="sales-email" class="text-sm text-bone">
-            {fields.email.label}
-          </label>
-          <input
-            id="sales-email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            required
-            class={field}
-            placeholder={fields.email.placeholder}
-            aria-describedby="sales-email-error"
-          />
+          <label for="sales-email" class="text-sm text-bone">{fields.email.label}</label>
+          <input id="sales-email" name="email" type="email" autocomplete="email" required class={field} placeholder={fields.email.placeholder} aria-describedby="sales-email-error" />
           <p id="sales-email-error" class="min-h-5 text-sm text-signal" data-error-for="email"></p>
         </div>
         <div class="flex flex-col gap-2">
-          <label for="sales-company" class="text-sm text-bone">
-            {fields.company.label}
-          </label>
-          <input
-            id="sales-company"
-            name="company"
-            autocomplete="organization"
-            required
-            class={field}
-            placeholder={fields.company.placeholder}
-            aria-describedby="sales-company-error"
-          />
-          <p id="sales-company-error" class="min-h-5 text-sm text-signal" data-error-for="company"></p>
+          <label for="sales-agent" class="text-sm text-bone">{fields.agentType.label}</label>
+          <input id="sales-agent" name="agentType" required class={field} placeholder={fields.agentType.placeholder} aria-describedby="sales-agent-error" />
+          <p id="sales-agent-error" class="min-h-5 text-sm text-signal" data-error-for="agentType"></p>
         </div>
         <div class="flex flex-col gap-2">
-          <label for="sales-size" class="text-sm text-bone">
-            {fields.size.label}
-          </label>
-          <select id="sales-size" name="size" class={`${field} appearance-none bg-ink`}>
-            {sizes.map((size) => (
-              <option>{size}</option>
-            ))}
-          </select>
-          <p class="min-h-5 text-sm text-dim">{fields.size.help}</p>
-        </div>
-        <div class="flex flex-col gap-2 md:col-span-2" data-demo-only hidden>
-          <label for="sales-message" class="text-sm text-bone">
-            {fields.message.label}
-          </label>
-          <textarea
-            id="sales-message"
-            name="message"
-            rows="3"
-            class={`${field} h-auto resize-none py-3`}
-            placeholder={fields.message.placeholder}></textarea>
+          <label for="sales-contact" class="text-sm text-bone">{fields.contactMethod.label}</label>
+          <input id="sales-contact" name="contactMethod" required class={field} placeholder={fields.contactMethod.placeholder} aria-describedby="sales-contact-error" />
+          <p class="min-h-5 text-sm text-dim">{fields.contactMethod.help}</p>
+          <p id="sales-contact-error" class="min-h-5 text-sm text-signal" data-error-for="contactMethod"></p>
         </div>
       </div>
 
-      <div class="mt-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <!-- 3. 联系我们：微信与抖音二维码 -->
+      <div class="mt-12 flex flex-col items-center justify-center gap-10 text-center" data-contact-content hidden>
+        <!-- 微信部分 -->
+        <div class="flex flex-col items-center gap-4">
+          <p class="text-bone font-display text-subtitle">扫码添加 Dopi 官方客服 (微信)</p>
+          <Image 
+            src="/images/wechat-qrcode.jpg" 
+            alt="微信客服二维码" 
+            width={256}
+            height={256}
+            widths={[256, 512]} 
+            class="w-56 h-56 object-cover rounded-lg border border-line bg-ink-2" 
+          />
+          <p class="text-sm text-mute">微信扫一扫，获取专属代理政策与产品详情</p>
+        </div>
+
+        <!-- 抖音部分 -->
+        <div class="flex flex-col items-center gap-4">
+          <p class="text-bone font-display text-subtitle">关注 Dopi 官方抖音</p>
+          <Image 
+            src="/images/douyin-qrcode.jpg" 
+            alt="抖音官方二维码" 
+            width={256}
+            height={256}
+            widths={[256, 512]} 
+            class="w-56 h-56 object-cover rounded-lg border border-line bg-ink-2" 
+          />
+          <p class="text-sm text-mute">抖音扫一扫，观看真实持妆测评与幕后花絮</p>
+        </div>
+      </div>
+
+      <!-- 4. 关注我：INS 二维码 -->
+      <div class="mt-12 flex flex-col items-center justify-center gap-6 text-center" data-follow-content hidden>
+        <p class="text-bone font-display text-subtitle">关注 Dopi 官方 Instagram</p>
+        <Image 
+          src="/images/ins.png" 
+          alt="Instagram 二维码" 
+          width={256}
+          height={256}
+          widths={[256, 512]} 
+          class="w-56 h-56 object-cover rounded-lg border border-line bg-ink-2" 
+        />
+        <p class="text-sm text-mute">获取最新美妆资讯与幕后花絮</p>
+      </div>
+
+      <!-- 5. 提交按钮区域 (仅在“加入我们”时显示) -->
+      <div class="mt-12 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between" data-join-actions>
         <button
           type="submit"
           class="btn group relative h-14 bg-signal px-8 text-ink disabled:opacity-70"
           data-btn
           data-sales-submit>
           <span class="btn-fill bg-bone" aria-hidden="true"></span>
-          <span data-submit-label data-free={copy.submit.free} data-demo={copy.submit.demo}>
-            <TextRoll text={copy.submit.free} />
+          <span data-submit-label data-join={copy.submit.join}>
+            <TextRoll text={copy.submit.join} />
           </span>
           <span class="btn-icon" data-dir="right">
             <Icon name="arrow-right" />

@@ -34,14 +34,14 @@ export const storyPage = {
 
 export const pricingPage = {
   meta: {
-    title: '选购套装',
-    description: `从体验装开始，找到最适合你的完美色号与持妆方案。`,
+    title: '选购与合作',
+    description: `从体验装开始，或申请成为 Dopi 合作伙伴，找到最适合你的完美方案。`,
   },
   hero: {
-    lines: ['先试后买。', '找到你的本命色号。'],
+    lines: ['先试后买，', '或携手共赢。'],
     accent: 1,
     intro:
-      '所有套装均含正装保障与试用装。升级套装可享专属美妆蛋、定制粉扑及会员专属礼遇。',
+      '所有套装均含正装保障与试用装。同时，我们开放特约代理与市级代理申请，期待与您共创美业未来。',
   },
   plans: {
     monthly: '单次购买',
@@ -65,33 +65,36 @@ export const pricingPage = {
   },
   faq: { title: '常见问题解答。' },
   sales: {
-    title: '告诉我们你的肌肤需求。',
-    body: `立即免费申领试用装，或预约 30 分钟线上 1v1 肤质诊断，为你定制专属底妆方案。`,
+    title: '告诉我们您的需求。',
+    body: `立即免费申领试用装，或申请成为 Dopi 合作伙伴，我们将为您定制专属方案。`,
     image: '/images/gallery-window.jpg',
     imageAlt: '阳光透过窗户洒在精致的化妆台上',
-    intentLegend: '我希望',
-    intents: { free: site.cta.primary.label, demo: site.cta.secondary.label },
+    intentLegend: '请选择您的意向',
+    intents: { 
+      join: '加入我们', 
+      contact: '联系我们', 
+      follow: '关注我' 
+    },
     fields: {
       name: { label: '您的姓名', placeholder: '李小美', error: '请告诉我们如何称呼您。' },
-      email: {
-        label: '电子邮箱',
-        placeholder: 'your@email.com',
-        error: '请输入有效的电子邮箱地址。',
+      email: { label: '电子邮箱', placeholder: 'your@email.com', error: '请输入有效的电子邮箱地址。' },
+      agentType: { 
+        label: '合作意向', 
+        placeholder: '普通会员 / 特约代理 / 市级代理', 
+        error: '请选择或填写您的合作意向。' 
       },
-      company: { label: '肤质类型', placeholder: '混油皮/敏感肌', error: '请选择或填写您的肤质。' },
-      size: { label: '日常妆造需求', help: '帮助我们为您推荐最合适的套装。' },
-      message: {
-        label: `您希望 Dopi 为您解决什么底妆困扰？`,
-        placeholder: '经常卡粉、下午容易脱妆...',
+      contactMethod: { 
+        label: '联系方式 (电话/微信/其他)', 
+        placeholder: '请输入您的电话号码或微信号', 
+        error: '请留下您的有效联系方式。',
+        help: '方便我们的招商专员与您取得联系。'
       },
     },
-    sizes: ['日常通勤淡妆', '重要场合全妆', '专业影视/舞台妆', '敏感肌特殊护理', '其他定制需求'],
-    submit: { free: '免费申领试用装', demo: '预约 1v1 肤质诊断' },
+    submit: { join: '提交合作申请' },
     consent: `提交即表示您同意接收 Dopi 的相关资讯。我们承诺绝不发送垃圾邮件。`,
     sending: '提交中...',
     success: {
-      demo: '感谢 {name}。我们将于 1 个工作日内发送邮件至 {email} 为您确认诊断时间。',
-      free: '您的专属试用装申领已提交。请留意 {email} 的确认邮件。',
+      join: '感谢 {name}。我们的招商专员将尽快通过 {email} 或您留下的联系方式与您取得联系。',
     },
   },
 };

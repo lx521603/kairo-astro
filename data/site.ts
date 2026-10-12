@@ -16,7 +16,7 @@ export const site: SiteConfig = {
   },
   socials: [
     { label: 'X', href: 'https://x.com', icon: 'x' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
+    { label: 'Instagram', href: 'https://instagram.com/viviwang911', icon: 'instagram' },
     { label: 'GitHub', href: 'https://github.com', icon: 'github' },
   ],
 };

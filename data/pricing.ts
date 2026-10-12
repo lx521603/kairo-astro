@@ -7,11 +7,11 @@ export const plans: Plan[] = [
     // 设为相同值，规避周期切换逻辑，代表一次性门槛费
     monthly: 299,
     yearly: 299,
-    description: '适合个人体验、自用以省钱，或开启美妆副业的第一步。',
+    description: '适合个人体验、自用以省钱、朋友拼单，或开启美妆副业的第一步。',
     cta: site.cta.primary.label,
     href: site.cta.primary.href,
     features: [
-      '享受会员专属 85 折',
+      '享受会员专属 5 折',
       '✨ 全国包邮 (仅此级别)',
       '赠送新手体验装礼盒',
       '免费获取基础底妆课程',
@@ -21,12 +21,12 @@ export const plans: Plan[] = [
     name: '特级代理',
     monthly: 399,
     yearly: 399,
-    description: '适合有一定客源的美妆博主、实体店主，开启轻创业。',
+    description: '适合 摆摊、朋友圈，开启轻创业。',
     cta: site.cta.primary.label,
     href: site.cta.primary.href,
     featured: true,
     features: [
-      '享受特代专属 6 折拿货价',
+      '享受特代专属 5 折拿货价',
       '开放系统一件代发权限',
       '高级社群营销与引流培训',
       '官方高清素材库使用权',
@@ -43,7 +43,7 @@ export const plans: Plan[] = [
       '享受市代最低 4 折拿货价',
       '包含特代所有权益及素材',
       '线下沙龙及美导下店支持',
-      '区域保护与团队业绩返利',
+      '团队业绩返利',
     ],
   },
 ];
@@ -52,9 +52,9 @@ export const compareGroups: CompareGroup[] = [
   {
     title: '拿货与权益',
     rows: [
-      { feature: '核心产品折扣', values: ['85 折', '6 折', '4 折'] },
+      { feature: '核心产品折扣', values: ['5 折', '5 折', '4 折'] },
       { feature: '物流政策', values: ['全国包邮', '运费自理/到付', '物流专线到付'] },
-      { feature: '免费试用装额度', values: ['每月 2 份', '每月 10 份', '每月 50 份'] },
+      { feature: '免费试用装额度', values: ['每月 0 份', '每月 2 份', '每月 10 份'] },
       { feature: '一件代发权限', values: [false, true, true] },
     ],
   },
