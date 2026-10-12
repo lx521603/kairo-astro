@@ -1,0 +1,53 @@
+name: Deploy Astro to VPS (1Panel)
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch: # 允许在 GitHub 页面手动触发部署
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build Astro project
+        run: pnpm build
+        # Astro 默认输出到根目录的 dist/ 文件夹
+
+      # 🌟 核心步骤：智能增量覆盖 + 自动清理旧文件
+      - name: Deploy dist/ to VPS (rsync)
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.VPS_HOST }}
+          REMOTE_USER: ${{ secrets.VPS_USER }}
+          
+          # ⚠️ 关键：SOURCE 末尾必须有斜杠 "/"
+          # 表示把 dist 目录【里面的内容】同步过去，而不是把 dist 文件夹本身同步过去
+          SOURCE: "dist/" 
+          
+          # 👇 你的 1Panel 网站根目录绝对路径
+          TARGET: "/opt/www/sites/zaeth.com/index/"
+          
+          # -avz: 归档模式、显示过程、压缩传输
+          # --delete: 自动删除 VPS 上存在、但新 dist/ 中不存在的旧文件（实现完美清理）
+          # --exclude: 如果 1Panel 在该目录下生成了 .user.ini 等隐藏配置文件，可以用此参数保护它们不被删除
+          ARGS: "-avz --delete --exclude=.user.ini"
+
+      - name: Deployment Complete
+        run: echo "✅ Astro 静态文件已增量覆盖至 1Panel 网站根目录！"

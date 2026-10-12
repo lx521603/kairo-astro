@@ -1,26 +1,26 @@
 ---
-title: Why we chose quiet
-excerpt: Most monitoring tools compete on how much they catch. We decided to compete on how little we interrupt.
-category: Company
-date: '2026-06-24'
-readTime: 5 min read
+title: 为什么我们选择“克制”：底妆的最高境界是“无感”
+excerpt: 大多数粉底液在比拼遮瑕力和叠加层数，而 Dopi 选择比拼如何不给肌肤增加一丝负担。
+category: 品牌理念
+date: '2025-06-24'
+readTime: 5 分钟阅读
 cover: /images/journal-swirl.jpg
 author:
-  name: Amara Diallo
-  role: Co-founder, CEO
-  image: /images/team-amara.jpg
+  name: 薇薇
+  role: Dopi 创始人
+  image: /images/vv.webp
 ---
 
-When we started Kairo, every investor asked the same question: how many alerts does it send? They expected a big number. We gave them a small one.
+当我们开始研发 Dopi 时，每个美妆行业的人都问同一个问题：你们的遮瑕度有多高？能叠加几层？他们期待一个夸张的数字。但我们给出了一个极简的答案。
 
-## Attention is the scarce resource
+## 肌肤的“呼吸权”才是稀缺资源
 
-An operator can act on a handful of things a day. A tool that surfaces fifty is not helping. It is outsourcing the hard part, deciding what matters, back to the person it was meant to help.
+肌肤每天能承受的负担是有限的。一款需要你先涂防晒、再涂隔离、接着糊上厚重粉底、最后还要用散粉死死压住的产品，不是在帮助你变美。它只是在把“如何不闷痘、不卡粉”的难题，抛回给了本来应该被呵护的肌肤。
 
-## Our budget
+## 我们的“零负担”承诺
 
-Every Kairo workspace has an attention budget. By default it is three briefs per person per day. To send a fourth, the signal has to be more important than the weakest of the first three.
+Dopi 的每一滴粉底液，都有严格的“成分与粉感预算”。我们坚持“防晒 + 美白 + 底妆”三合一，坚决剔除所有不必要的香精、酒精和厚重填充物。我们的原则是：如果要添加任何新成分，它带来的真实养肤功效，必须远远大于它可能给肌肤增加的任何一丝负担。
 
-## The result
+## 最终的结果
 
-Our customers open nine out of ten briefs. Not because they have to, but because they have learned that when Kairo speaks, it is worth hearing.
+我们的用户中，有 90% 的人一整天都不需要补妆。不是因为她们被迫忍受，而是因为她们已经确信：当 Dopi 贴合在肌肤上时，它带来的只有清透、安心和高级的微光感，而不是负担。

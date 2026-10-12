@@ -1,38 +1,50 @@
 ---
-order: 2
-client: Solvane Energy
-industry: Energy
-title: Solvane finds failing panels a week before the output drops.
-summary: A solar operator with 1,900 sites turned inverter noise into a short list of panels that need a visit.
-cover: /images/story-solvane.jpg
-gallery: [/images/gallery-tower.jpg, /images/gallery-street.jpg]
-year: '2025'
-team: Field operations, 120 people
+order: 3
+client: Dopi 悦色
+industry: 旅游写真
+title: 旅途纪实：用脚步丈量世界，用底妆定格最美瞬间
+summary: 从山川到湖海，带着 Dopi 悦色防晒美白粉底液开启一场说走就走的旅行。无惧风吹日晒，让每一次快门都记录下最清透自信的自己。
+
+# 🌟 Frontmatter 使用本地相对路径 (请确保图片已放入 assets/images/ 目录)
+cover: /images/Pcc0okk.webp
+gallery: 
+  - /images/Pcc0okk.webp
+  - /images/9kb0okk.webp
+
+year: '2024'
+team: 创作者：薇薇
 results:
-  - value: '7 days'
-    label: earlier detection of faults
-  - value: '-28%'
-    label: wasted truck rolls
-  - value: '2.1 GWh'
-    label: output recovered in year one
+  - value: '三合一'
+    label: '防晒美白底妆同步'
+  - value: '0斑驳'
+    label: '烈日暴走依然服帖'
+  - value: '微光感'
+    label: '出汗后融合更自然'
 quote:
-  text: Our crews used to drive to sites that were fine. Now every visit starts with a reason and a part number.
-  name: Elif Arslan
-  role: Director of Field Operations
+  text: 在旅途中随手抓拍的每一张写真，都不需要厚重的后期磨皮，因为 Dopi 给了我最完美的原生质感。
+  name: 薇薇
+  role: 旅行摄影创作者
 ---
 
-## The problem
+## 旅途纪实：无惧风吹日晒，定格行走间的清透光芒
 
-Solvane's inverters report thousands of readings a minute. Almost all of it is normal. The few readings that matter were buried, and crews were dispatched on a fixed schedule instead of on evidence.
+旅行，是用脚步丈量世界，也是用镜头记录不同风景下最真实的自己。但在长途跋涉的旅途中，面对高原的烈日、海边的狂风或是街头的闷热，肌肤往往最先发出抗议。长时间带妆暴走，不仅容易出汗脱妆，厚重的粉底更会让肌肤在镜头前显得暗沉、假面。
 
-## What changed
+为了让每一次旅行都能毫无负担地记录美好，我的行李箱里永远为 **Dopi 悦色防晒美白粉底液** 留着一个位置。它“防晒+美白+底妆”三合一的神仙属性，简直是旅行星人的福音！省去了层层叠加防晒和隔离的繁琐，轻薄的一层就能抵御户外紫外线的侵袭，让肌肤在旅途中也能自由呼吸。
 
-Kairo learned the normal output curve for each site, accounting for weather, season and panel age. When a string started drifting, it flagged it with the likely cause and the cost of waiting.
+更让我惊喜的是它强大的持妆力。即使是在烈日下暴走了一整天，微微出汗后，底妆不仅没有斑驳，反而与肌肤融合得更加自然，透出一种健康、清透的“微光感”。在旅途中随手抓拍的每一张写真，都不需要厚重的后期磨皮，因为 Dopi 给了我最完美的原生质感。
 
-- Daily dispatch list ranked by output at risk
-- Weather-adjusted baselines for every site
-- Briefs sent straight to the regional crew lead
+下面这组旅途中的纪实写真，记录了山川湖海间的自由与惬意。没有脱妆的尴尬，只有 Dopi 陪伴下的自信与从容。
 
-## The outcome
+---
 
-Faults are found a week earlier on average, and almost a third fewer trucks leave the depot without a clear job to do.
+### 📸 旅途抓拍持妆实录
+
+![旅途写真持妆实拍 1](https://gallery.zaeth.com/rest/vivi/Pcc0okk.webp)
+*山川湖海间：三合一守护，无惧户外紫外线侵袭*
+
+![旅途写真持妆实拍 2](https://gallery.zaeth.com/rest/vivi/9kb0okk.webp)
+*烈日下暴走：微微出汗后，底妆融合更自然*
+
+![旅途写真持妆实拍 3](https://gallery.zaeth.com/rest/vivi/S8q1qkk.jpeg)
+*高清特写：没有厚重后期磨皮，只有完美的原生质感*

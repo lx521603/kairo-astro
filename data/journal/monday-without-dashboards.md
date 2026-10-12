@@ -1,30 +1,30 @@
 ---
-title: A Monday without dashboards
-excerpt: Three operators describe the first week they stopped opening their BI tool before coffee, and what they did with the hour.
-category: Operations
-date: '2026-07-30'
-readTime: 6 min read
+title: 告别补妆镜的周一
+excerpt: 三位职场女性描述她们第一次不再随身携带粉饼的一周，以及省下的时间做了什么。
+category: 真实体验
+date: '2025-07-30'
+readTime: 6 分钟阅读
 cover: /images/journal-blur.jpg
 author:
-  name: Sade Adeyemi
-  role: Head of Customer Success
-  image: /images/team-sade.jpg
+  name: 薇薇
+  role: Dopi 创始人
+  image: /images/vv.webp
 ---
 
-Ask an operations lead how they start the week and you will hear a version of the same ritual. Open the dashboards. Scan for red. Open the ones that look odd. Export something. Message someone.
+问一个职场女性周一早晨的化妆仪式，你会听到几乎一样的回答：涂粉底、定妆、带粉饼、带镜子、带散粉...生怕下午脱妆尴尬。
 
-We asked three Kairo customers to drop the ritual for a month.
+我们邀请了三位 Dopi 用户，尝试一个月不带补妆工具上班。
 
-## The first week felt wrong
+## 第一周感觉不对劲
 
-Everyone admitted to checking the dashboards anyway. Old habits. By Thursday, two of the three had stopped, because the brief had already told them everything the dashboards would.
+所有人都承认，头几天还是会习惯性地去摸包里的粉饼。这是多年养成的"脱妆焦虑"。但到了周四，三个人都放弃了，因为 Dopi 的持妆力已经告诉她们：根本不需要补妆。
 
-## Where the hour went
+## 省下的时间去哪了
 
-- One spent it in a weekly call with their largest customer
-- One used it to coach new team leads
-- One, honestly, used it to finish their coffee
+- 一位用来在午休时和闺蜜喝了一杯咖啡
+- 一位用来在会议室里更专注地做方案
+- 一位，说实话，用来多睡了十分钟
 
-## What they missed
+## 她们错过了什么
 
-Nothing that mattered, they said. And one thing they gained: the confidence that if something did go wrong, they would hear about it without looking.
+"什么都没错过，"她们说。"而且我们获得了一样东西：不再担心脱妆的自信。"

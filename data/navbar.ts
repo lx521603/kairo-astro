@@ -1,18 +1,18 @@
 import type { NavLink } from '@/interface';
 
 export const navLinks: NavLink[] = [
-  { label: 'Customers', href: '/customers' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Journal', href: '/journal' },
-  { label: 'About', href: '/about' },
+  { label: '案例', href: '/customers' },
+  { label: '方案', href: '/pricing' },
+  { label: '研究所', href: '/journal' },
+  { label: '关于', href: '/about' },
 ];
 
 export const menuLinks: NavLink[] = [{ label: 'Home', href: '/' }, ...navLinks];
 
 export const routeLabels: Record<string, string> = {
-  '/': 'Home',
-  '/customers': 'Customers',
-  '/pricing': 'Pricing',
-  '/journal': 'Journal',
-  '/about': 'About',
+  '/': 'Dopi',
+  '/customers': '案例',
+  '/pricing': '方案',
+  '/journal': '研究所',
+  '/about': '关于',
 };

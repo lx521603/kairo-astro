@@ -1,40 +1,51 @@
 ---
-order: 1
-client: Halden Freight
-industry: Logistics
-title: Halden cut stockouts by a third without hiring a single analyst.
-summary: A 40-warehouse freight network used Kairo to spot demand shifts days before they emptied shelves.
-cover: /images/story-halden.jpg
-gallery: [/images/gallery-road.jpg, /images/gallery-corridor.jpg]
+order: 2
+client: Dopi 悦色
+industry: 泼水节实测
+title: 泼水节狂欢实测：水花四溅一整天，底妆依然牢牢“焊”在脸上！
+summary: 从街头水战到夜晚派对，经历无数次水泼与汗水考验，Dopi 悦色粉底液依然完美持妆，让你放肆玩水，美丽不打折！
+
+# 🌟 Frontmatter 使用本地相对路径 (假设图片已放入 assets/images/ 目录)
+cover: /images/NeXJ3lk.webp
+gallery: 
+  - /images/NeXJ3lk.webp
+  - /images/AfBj3lk.webp
+
 year: '2025'
-team: Operations, 60 people
+team: 创作者：薇薇
 results:
-  - value: '-34%'
-    label: stockouts across the network
-  - value: '5 days'
-    label: earlier warning on demand spikes
-  - value: '0'
-    label: new analyst hires needed
+  - value: '0脱妆'
+    label: '无惧水花与汗水考验'
+  - value: '微光肌'
+    label: '越夜越透高级质感'
+  - value: '双重守护'
+    label: '防晒美白同步进行'
 quote:
-  text: It caught a pricing bug on a Sunday night that would have cost us the whole month. Nobody was even looking at that chart.
-  name: Tobi Mensah
-  role: Head of Revenue Operations
+  text: 放肆去玩吧，你的美丽，Dopi 来守护！
+  name: 薇薇
+  role: 美妆创作者
 ---
 
-## The problem
+## 拒绝“花脸”尴尬，放肆狂欢才是硬道理！
 
-Halden moves goods for more than three hundred retailers through forty warehouses. Their planning team had good dashboards and no time to read them. By the time a demand spike showed up in the weekly review, the shelves were already empty.
+一年一度的泼水节，怎么能因为怕“脱妆花脸”而束手束脚？从清晨的街头水战，到夜晚的音乐派对，高强度的水花洗礼和汗水交织，普通底妆早就斑驳、卡粉，甚至顺着脸颊流下尴尬的“白汤”。
 
-## What changed
+但 **Dopi 悦色防晒美白粉底液**，这次交出了堪称“底妆胶水”的完美答卷！它不仅自带防晒美白双重 buff，更采用了独特的成膜锁妆科技。无惧水花狂泼与大量出汗，底妆依然牢牢扒在脸上，不斑驳、不暗沉，反而与肌肤自然融合，越夜越透出高级的“微光奶油肌”质感。
 
-Kairo connected to Halden's warehouse management system, their order data and the support queue. Within a week it had a baseline for every lane and every product family. The first useful brief arrived on day nine: a regional surge in cold-chain orders, three days ahead of the usual pattern.
+下面这组泼水节当天的无滤镜实拍，就是最真实的持妆记录。
 
-- Briefs land in the planning channel at 7am, ranked by revenue at risk
-- Each brief links to the exact orders and lanes behind it
-- Planners ask follow-up questions in plain English and get answers in seconds
+---
 
-> We stopped reading dashboards on Monday morning. We read one page and make three decisions.
+### 📸 狂欢无滤镜实拍记录
 
-## The outcome
+![泼水节街头水战持妆](https://gallery.zaeth.com/rest/vivi/NeXJ3lk.webp)
+*清晨街头：无惧第一波水花洗礼，底妆依然完整*
 
-Stockouts fell by a third over two quarters. The planning team stayed the same size, and spends its Monday mornings deciding instead of digging.
+![泼水节派对微光肌](https://gallery.zaeth.com/rest/vivi/AfBj3lk.webp)
+*高清特写：不卡粉、不斑驳，美丽不打折*
+
+![泼水节夜晚派对实测](https://gallery.zaeth.com/rest/vivi/mo0j3lk.webp)
+*午后狂欢：汗水与水花交织，底妆牢牢“焊”在脸上*
+
+![泼水节近距离特写](https://gallery.zaeth.com/rest/vivi/ZwBj3lk.webp)
+*褪去粉感，透出高级的微光奶油肌质感*

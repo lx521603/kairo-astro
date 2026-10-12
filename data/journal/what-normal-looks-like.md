@@ -1,26 +1,26 @@
 ---
-title: Teaching a model what normal looks like
-excerpt: Static thresholds fire on every holiday and miss every slow leak. A look at how Kairo builds baselines that move with your business.
-category: Research
-date: '2026-08-19'
-readTime: 9 min read
+title: 拒绝“一刀切”，Dopi 如何动态读懂你的肌肤状态？
+excerpt: 固定的色号和死板的配方总会在换季时“翻车”。来看看 Dopi 的微分子锁妆科技，如何随你的肌肤状态动态适应，而非强行遮盖。
+category: 研发揭秘
+date: '2025-08-19'
+readTime: 9 分钟阅读
 cover: /images/journal-light.jpg
 author:
-  name: Rafael Costa
-  role: Head of Machine Learning
+  name: 林博士
+  role: Dopi 首席研发科学家
   image: /images/team-rafael.jpg
 ---
 
-The simplest anomaly detector is a threshold: alert when revenue drops below a number. It is also the most annoying one. It fires every bank holiday and stays silent while a metric slowly bleeds out.
+传统粉底液的逻辑很简单：用最厚的粉去强行遮盖瑕疵。但这往往也是最让人难受的。它在夏天让你闷痘，在冬天让你卡粉，却对肌肤缓慢的氧化暗沉无能为力。
 
-## Baselines, not thresholds
+## 动态融合，而非死板遮盖
 
-Kairo models each metric as a combination of trend, weekly rhythm, yearly season and known events like launches or price changes. The alert is not "below X". It is "outside the range this metric would normally be in today".
+Dopi 的微分子锁妆科技，不会死板地试图“覆盖”你的肌肤。它会综合考量你当下的肌肤温度、环境湿度以及自然的出油周期。它的目标不是“低于某个遮瑕标准”，而是“找到今天你的肌肤最舒适的状态”，与肌肤自然分泌的少量油脂完美融合，形成会呼吸的保护膜。
 
-## The slow leak problem
+## 对抗“缓慢暗沉”难题
 
-Sudden drops are easy. The expensive problems are gradual: a conversion rate that loses a tenth of a percent every week. We track the slope of the residual over several windows, so a slow drift gets flagged long before it crosses any line.
+突然的大面积脱妆很容易发现，但真正让女生头疼的问题是渐进式的：比如到了下午 3 点，肤色不知不觉暗了半个度，或者鼻翼开始微微卡粉。Dopi 的独家抗氧化配方能在微观层面持续中和自由基，监测肌肤状态的微小变化，在暗沉真正发生前，就将其扼杀在摇篮里。
 
-## Staying quiet
+## 克制，是最高级的养护
 
-The hardest part is not detection. It is restraint. Every flagged change goes through a second check: would the owner of this metric care? If the answer is unclear, Kairo waits for more evidence.
+最难的不是遮瑕，而是克制。每一次配方升级，Dopi 都会经过严格的温和性测试：这会给肌肤增加负担吗？如果答案是不确定，我们就会继续优化，直到它足够轻盈。这就是为什么 Dopi 能做到 0 酒精、0 香精，让肌肤在带妆一整天后，依然能自由呼吸。

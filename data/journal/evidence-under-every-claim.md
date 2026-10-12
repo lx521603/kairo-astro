@@ -1,26 +1,26 @@
 ---
-title: Evidence under every claim
-excerpt: Why every sentence in a Kairo brief links back to the rows that produced it, and what that did to trust.
-category: Product
-date: '2026-07-11'
+title: 拒绝“盲涂”：为什么 Dopi 的每一句宣传，都有真实数据支撑？
+excerpt: 揭秘 Dopi 悦色粉底液背后的研发逻辑：为什么我们坚持用真实测试数据说话，以及这如何赢得了 10 万+敏感肌用户的信任。
+category: 成分科普
+date: '2025-07-11'
 readTime: 4 min read
 cover: /images/journal-motion.jpg
 author:
-  name: Jonas Weber
-  role: Co-founder, CTO
+  name: 张博士
+  role: Dopi 首席研发官
   image: /images/team-jonas.jpg
 ---
 
-Language models are fluent. Fluency is not the same as being right. Early on, we saw design partners read a brief, nod, and then quietly check the numbers themselves.
+市面上的美妆宣传往往辞藻华丽。但“听起来很美”并不等于“用起来很好”。早期在测试阶段，我们发现许多用户在看到“持妆 12 小时”的宣传后，依然会半信半疑地去翻看差评。
 
-## Making the check free
+## 让“验证”变得简单
 
-So we made checking free. Every claim in a brief is linked to the query and the rows behind it. One click shows the data. Two clicks show how the number was calculated.
+因此，我们决定让验证变得零成本。Dopi 的每一项核心宣称（如“0 斑驳”、“微光奶油肌”），都直接链接到第三方实验室的实测报告和真实用户的打卡记录。一键即可查看 12 小时持妆的对比原图，两键即可了解测试的具体环境（温度、湿度、肤质）。
 
-## What changed
+## 带来了什么改变
 
-Within a month, partners stopped double-checking. Not because they trusted the model more, but because they knew they could verify it in seconds if they ever needed to.
+在公开这些数据后的一个月内，用户的疑虑大幅减少。不是因为她们盲目相信了广告，而是因为她们知道：**如果心存疑虑，随时可以在几秒钟内亲自验证。**
 
-## The rule we kept
+## 我们坚守的原则
 
-If Kairo cannot point to the data behind a sentence, the sentence does not ship. It is the one rule in the product we have never relaxed.
+如果 Dopi 无法为某句宣传语提供真实的数据或实验支撑，这句话就绝不会出现在我们的产品页上。这是我们在品牌建设中，从未妥协过的唯一原则。

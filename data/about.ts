@@ -4,61 +4,61 @@ import type { Milestone, Role, TeamMember, Value } from '@/interface';
 export const milestones: Milestone[] = [
   {
     year: '2021',
-    title: 'A spreadsheet of missed moments',
-    body: 'Our founders listed every problem their last company found out about too late. The list had 214 rows.',
+    title: '从一次脱妆的尴尬开始',
+    body: '创始人在一次重要会议上遭遇脱妆窘境，由此萌生了打造一款真正不脱妆粉底液的想法。调研了 214 位女性的底妆困扰。',
     image: '/images/about-city.jpg',
   },
   {
     year: '2022',
-    title: 'The first brief',
-    body: 'Twelve design partners. One Slack message every morning, written by a model and checked by a person.',
+    title: '第一款配方诞生',
+    body: '与 12 位皮肤科医生合作，历经 18 个月研发。首批 100 位测试用户，98% 反馈 12 小时不脱妆。',
     image: '/images/gallery-desk.jpg',
   },
   {
     year: '2024',
-    title: 'From reports to signals',
-    body: 'We stopped summarising dashboards and started watching the data underneath them, in real time.',
+    title: '从实验室走向市场',
+    body: '正式推出 Dopi 粉底液，独家微分子锁妆科技。首月销量突破 10 万瓶，成为美妆圈现象级产品。',
     image: '/images/about-studio.jpg',
   },
   {
     year: '2026',
-    title: 'Teams on four continents',
-    body: `Freight, energy, health and finance operators now start their day with a ${site.name} brief.`,
+    title: '百万用户的信赖之选',
+    body: `超过 100 万女性选择 ${site.name} 作为日常底妆。从职场新人到专业化妆师，Dopi 成为不脱妆的代名词。`,
     image: '/images/gallery-tower.jpg',
   },
 ];
 
 export const values: Value[] = [
   {
-    title: 'Early beats perfect',
-    body: 'A rough signal on Tuesday is worth more than a polished report on Friday. We ship the useful version first.',
+    title: '真实效果胜过完美包装',
+    body: '我们不追求华丽的营销话术，只专注产品的真实效果。每一滴粉底液都经得起 12 小时的考验。',
   },
   {
-    title: 'Quiet by default',
-    body: `Every alert costs someone their focus. ${site.name} stays silent unless it has something worth saying.`,
+    title: '温和是底线，不是卖点',
+    body: `无酒精、无香精、无防腐剂。${site.name} 坚信，好的底妆不应该以牺牲肌肤健康为代价。`,
   },
   {
-    title: 'Show the evidence',
-    body: 'No claim without a link to the data behind it. Trust is earned one checkable sentence at a time.',
+    title: '用数据说话',
+    body: '每一条宣传都有真实测试数据支撑。12 小时持妆、98% 回购率，数字不会说谎。',
   },
   {
-    title: 'Operators first',
-    body: 'We build for the people who act on the numbers, not the people who admire them.',
+    title: '为真实场景而生',
+    body: '我们不为拍照而设计，只为挤地铁、开会、约会这些真实场景。让你在任何时刻都从容自信。',
   },
 ];
 
 export const team: TeamMember[] = [
-  { name: 'Amara Diallo', role: 'Co-founder, CEO', image: '/images/team-amara.jpg' },
-  { name: 'Jonas Weber', role: 'Co-founder, CTO', image: '/images/team-jonas.jpg' },
-  { name: 'Lin Takahashi', role: 'Head of Design', image: '/images/team-lin.jpg' },
-  { name: 'Rafael Costa', role: 'Head of Machine Learning', image: '/images/team-rafael.jpg' },
-  { name: 'Sade Adeyemi', role: 'Head of Customer Success', image: '/images/team-sade.jpg' },
-  { name: 'Viktor Lind', role: 'Chair, Board of Directors', image: '/images/team-viktor.jpg' },
+  { name: '徐毛毛', role: '创始人 & CEO', image: '/images/team-amara.jpg' },
+  { name: '张博士', role: '首席研发官', image: '/images/team-jonas.jpg' },
+  { name: '陈艺萱', role: '创意总监', image: '/images/team-lin.jpg' },
+  { name: '麦克', role: '用户体验负责人', image: '/images/team-rafael.jpg' },
+  { name: '薇薇', role: '客户成功总监', image: '/images/team-sade.jpg' },
+  { name: '肖恩', role: '品牌战略顾问', image: '/images/team-viktor.jpg' },
 ];
 
 export const roles: Role[] = [
-  { title: 'Senior Product Engineer', team: 'Engineering', location: 'Remote, Europe' },
-  { title: 'Machine Learning Engineer', team: 'Signals', location: 'Berlin or remote' },
-  { title: 'Product Designer', team: 'Design', location: 'Remote, Americas' },
-  { title: 'Customer Success Lead', team: 'Customers', location: 'London' },
+  { title: '高级美妆研发工程师', team: '研发部', location: '上海 / 远程' },
+  { title: '配方科学家', team: '实验室', location: '广州或远程' },
+  { title: '品牌视觉设计师', team: '设计部', location: '北京或远程' },
+  { title: '客户成功经理', team: '运营部', location: '上海' },
 ];

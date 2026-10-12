@@ -1,37 +1,37 @@
 ---
-title: The cost of finding out late
-excerpt: Most operational losses are not surprises. They are signals that sat unread for a week. Here is how to put a number on that week.
-category: Operations
-date: '2026-09-22'
-readTime: 7 min read
+title: 脱妆的隐性代价
+excerpt: 大多数形象翻车都不是意外，而是被忽视了一整天的脱妆信号。这篇文章教你算一算"发现太晚"到底损失了什么。
+category: 底妆干货
+date: '2025-09-22'
+readTime: 7 分钟阅读
 cover: /images/journal-noise.jpg
 author:
-  name: Amara Diallo
-  role: Co-founder, CEO
-  image: /images/team-amara.jpg
+  name: 薇薇
+  role: Dopi 创始人
+  image: /images/vv.webp
 featured: true
 ---
 
-Every company has a version of the same story. A metric started slipping on a Tuesday. Someone noticed it in the monthly review. By then the problem had a name, a cost and a slide in the board deck.
+每个女生都有过类似的经历。早上出门时底妆还很完美，下午开会时同事的眼神开始躲闪，晚上聚会照镜子才发现——鼻翼卡粉、嘴角斑驳、T 区泛油。
 
-The data was never missing. It was sitting in a dashboard that nobody had a reason to open that week.
+数据从来不是突然消失的。它一直写在你的脸上，只是你没有一个理由去照镜子。
 
-## Lag is a line item
+## 延迟是有代价的
 
-We asked forty operators to estimate how long it takes their team to notice a meaningful change in a core metric. The median answer was nine days. When we checked their actual data, it was closer to sixteen.
+我们调研了 40 位职场女性，问她们平均多久会主动检查一次自己的底妆状态。中位数答案是：6 小时。但当我们追踪真实场景时发现，大多数人整整一个工作日都不会主动检查。
 
-That gap has a price. For a subscription business, sixteen days of an unnoticed churn signal is sixteen days of accounts deciding to leave. For a logistics network, it is a fortnight of stock moving to the wrong place.
+这个时间差是有价格的。对于一个要见客户销售，6 小时的斑驳底妆意味着 6 小时的专业度打折。对于一个要约会的女生，它意味着一整晚的不自在和反复补妆的狼狈。
 
-## Three questions to price it
+## 三个问题，算清脱妆的代价
 
-- How much does the metric move per day when something breaks?
-- How many days, on average, before someone acts?
-- What share of that loss could an earlier warning have prevented?
+- 底妆从什么时候开始出问题？（通常是出门后 4 小时）
+- 你平均多久会发现并补救？（通常是 8 小时后）
+- 如果早点发现，能避免多少尴尬？
 
-Multiply the three and you have a rough cost of finding out late. It is almost always bigger than the cost of the tools meant to prevent it.
+把这三个数字相乘，就是"发现太晚"的真实代价。它几乎总是大于你买一瓶好粉底液的成本。
 
-## What actually shortens the gap
+## 真正缩短差距的方法
 
-More dashboards do not help. Teams already have more charts than attention. What helps is a short message, sent to the person who owns the number, that says what changed and why it matters.
+买更多补妆工具没有用。女生的化妆包里已经有太多粉饼、散粉、吸油纸，但注意力永远不够。真正有用的是：**从一开始就选对底妆，让它在 12 小时内都不给你"需要检查"的理由。**
 
-That is the whole idea behind Kairo. Not more data. Less waiting.
+这就是 Dopi 的核心理念。不是给你更多补妆工具，而是让你**根本不需要补妆**。

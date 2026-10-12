@@ -1,30 +1,30 @@
 ---
-title: Writing briefs people actually read
-excerpt: We tested 300 versions of the same alert. The winning format is shorter than you think and starts with a verb.
-category: Product
-date: '2026-09-08'
-readTime: 5 min read
+title: 为什么 Dopi 的文案从不用"必买"和"绝绝子"
+excerpt: 我们测试了 300 个版本的产品描述。最终胜出的那个，比你想象的要短，而且每一句都从事实开始。
+category: 品牌沟通
+date: '2025-09-08'
+readTime: 5 分钟阅读
 cover: /images/journal-face.jpg
 author:
-  name: Lin Takahashi
-  role: Head of Design
+  name: 陈艺萱
+  role: Dopi 创意总监
   image: /images/team-lin.jpg
 ---
 
-An alert that nobody reads is worse than no alert at all. It teaches people to ignore the channel it arrives in.
+一段没人信的文案，比没有文案更糟糕。它会教会用户：这个品牌说的每一句话，都可以打个问号。
 
-## What we tested
+## 我们测试了什么
 
-Over six months we sent design partners different versions of the same brief: long and short, with and without charts, written as a headline or as a question. Then we measured which ones led to an action within a day.
+在 Dopi 上线前的六个月里，我们给 300 位种子用户发送了同一款粉底液的不同版本描述：有长有短，有带对比图的，有写成口号的，有写成提问的。然后我们追踪哪一种描述，能让用户在 24 小时内产生真实的信任行为（收藏、加购、或主动询问色号）。
 
-## What won
+## 最终胜出的版本
 
-- **One sentence first.** What changed, by how much, since when.
-- **The cause second.** Even a likely cause beats no cause.
-- **A name third.** Briefs with a suggested owner were acted on twice as often.
+- **第一句只讲事实。** 什么效果、多少小时、从什么时候开始。比如："12 小时持妆，出门不补妆。"
+- **第二句讲原因。** 哪怕是"因为采用了微分子锁妆科技"，也比只说"超好用"强一万倍。
+- **第三句给承诺。** "不满意可退"、"免费申领试用装"——有兜底的产品描述，转化率是普通描述的两倍。
 
-Charts helped only when they showed a single line against its normal range. Anything busier was skipped.
+只有当对比图只展示"使用前 vs 使用后"这一组简单画面时，图片才有用。任何更复杂的拼图，用户都会直接划走。
 
-## What we stopped doing
+## 我们坚决不再做的事
 
-We removed severity colours, emoji and the word "urgent". People trusted the briefs more when they sounded calm.
+我们删掉了所有 emoji，删掉了"必买"、"绝绝子"、"yyds"、"闭眼入"这些词。当 Dopi 的文案听起来足够冷静、足够像朋友在真诚分享时，用户反而更愿意相信我们。
