@@ -23,6 +23,14 @@ import sparkle from '@phosphor-icons/core/regular/sparkle.svg?raw';
 import x from '@phosphor-icons/core/regular/x.svg?raw';
 import xLogo from '@phosphor-icons/core/regular/x-logo.svg?raw';
 
+// 🌟 新增：引入真正的美妆相关图标
+import drop from '@phosphor-icons/core/regular/drop.svg?raw';
+import sun from '@phosphor-icons/core/regular/sun.svg?raw';
+import heart from '@phosphor-icons/core/regular/heart.svg?raw';
+import leaf from '@phosphor-icons/core/regular/leaf.svg?raw';
+import flowerLotus from '@phosphor-icons/core/regular/flower-lotus.svg?raw';
+import paintBrush from '@phosphor-icons/core/regular/paint-brush.svg?raw';
+
 export const icons = {
   'arrow-down': arrowDown,
   'arrow-left': arrowLeft,
@@ -48,6 +56,13 @@ export const icons = {
   sparkle,
   x,
   'x-logo': xLogo,
+  // 🌟 新增：注册美妆图标
+  drop,
+  sun,
+  heart,
+  leaf,
+  flower: flowerLotus,
+  'paint-brush': paintBrush,
 };
 
 export type IconName = keyof typeof icons;

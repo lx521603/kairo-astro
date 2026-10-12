@@ -24,8 +24,8 @@ export const manifesto = {
 };
 
 export const productStory = {
-  title: ['Signal,', 'not noise.'],
-  heroImage: '/images/journal-face.jpg',
+  title: ['Dopi,', '不脱妆 粉底液.'],
+  heroImage: '/images/journal-noise.jpg',
   tiles: [
     'products-10',
     'products-01',
@@ -37,10 +37,10 @@ export const productStory = {
     'products-07',
     'products-08',
     'products-09',
-    'capability-lights',
-    'journal-swirl',
+    'DSC00701',
+    'DSC00960',
     'social',
-    'gallery-window',
+    'DSC00975',
   ].map((name) => `/images/${name}.jpg`),
   acts: [
     {
