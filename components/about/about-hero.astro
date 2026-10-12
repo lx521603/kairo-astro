@@ -3,7 +3,8 @@ import Media from '@/components/shared/ui/media.astro';
 import NumberFlow from '@/components/shared/ui/number-flow.astro';
 import { aboutPage } from '@/data/pages';
 
-const { lines, facts, intro, image, imageAlt, accent } = aboutPage.hero;
+// 🌟 移除了旧的 accent 变量，因为我们现在直接在 lines 对象里处理高亮
+const { lines, facts, intro, image, imageAlt } = aboutPage.hero;
 ---
 
 <section class="shell pt-36 pb-20 md:pt-44 md:pb-28" aria-labelledby="about-title">
@@ -11,10 +12,14 @@ const { lines, facts, intro, image, imageAlt, accent } = aboutPage.hero;
     <div class="lg:col-span-8">
       <h1
         id="about-title"
-        class="font-display text-[clamp(3rem,8vw,10rem)] leading-[0.9] font-extrabold tracking-[-0.05em] text-bone">
-        {lines.map((line, i) => (
+        class="font-display text-hero leading-[1.05] font-extrabold tracking-[-0.04em] text-bone">
+        {/* 🌟 修改这里的渲染逻辑，支持对象格式的 accent 高亮 */}
+        {lines.map((line) => (
           <span class="block overflow-hidden pb-[0.06em]" data-hero-line>
-            <span class={i === accent ? 'block text-signal' : 'block'}>{line}</span>
+            <span class="block">
+              {line.accent ? `${line.text} ` : line.text}
+              {line.accent && <span class="text-signal">{line.accent}</span>}
+            </span>
           </span>
         ))}
       </h1>

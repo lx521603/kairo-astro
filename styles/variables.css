@@ -14,20 +14,30 @@
   --font-body: var(--font-body-face), sans-serif;
   --font-mono: var(--font-mono-face), monospace;
 
-  --text-hero: clamp(3.25rem, 11.4vw, 15rem);
-  --text-hero--line-height: 0.9;
-  --text-hero--letter-spacing: -0.045em;
-  --text-display: clamp(2.75rem, 6.4vw, 7.5rem);
-  --text-display--line-height: 0.92;
-  --text-display--letter-spacing: -0.04em;
-  --text-title: clamp(2.25rem, 4.4vw, 4.75rem);
-  --text-title--line-height: 0.98;
-  --text-title--letter-spacing: -0.035em;
+  /* 🌟 首页超大标题：保持大气，但行高必须调大，防止中文被裁切 */
+  /* 🌟 针对电脑端优化：降低 vw 比例和最大值 */
+  --text-hero: clamp(3.1rem, 8vw, 8rem);
+  --text-hero--line-height: 1.05;
+  --text-hero--letter-spacing: -0.04em;
+
+  /* 🌟 其他页面大标题（customers, pricing, journal, about）：保持原始大小，只调行高 */
+  --text-title: clamp(2.2rem, 4.3vw, 4.65rem); /* 👈 几乎保持原样（约 98%） */
+  --text-title--line-height: 1.1;              /* 👈 原来是 0.98，必须调大到 1.1，中文才不会被裁切 */
+  --text-title--letter-spacing: -0.025em;      /* 👈 原来是 -0.035em，稍微放宽 */
+
+  /* 其他尺寸保持原样 */
+  /* 🌟 页面切换 Loading 的文字：微微缩小，行高调大 */
+  --text-display: clamp(2.5rem, 5vw, 6rem); /* 👈 原来是 clamp(2.75rem, 6.4vw, 7.5rem) */
+  --text-display--line-height: 1.1;          /* 👈 原来是 0.92，必须调大 */
+  --text-display--letter-spacing: -0.03em;   /* 👈 原来是 -0.04em */ 
+  
   --text-subtitle: clamp(1.5rem, 2.2vw, 2.25rem);
-  --text-subtitle--line-height: 1.08;
+  --text-subtitle--line-height: 1.1;
   --text-subtitle--letter-spacing: -0.02em;
+  
   --text-lead: clamp(1.0625rem, 1.2vw, 1.25rem);
   --text-lead--line-height: 1.5;
+  
   --text-label: 0.75rem;
   --text-label--line-height: 1.2;
   --text-label--letter-spacing: 0.06em;

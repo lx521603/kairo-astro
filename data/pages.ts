@@ -6,9 +6,12 @@ export const customersPage = {
     description: `看看美妆博主、职场女性如何使用 ${site.name} 保持全天候完美底妆，告别脱妆焦虑。`,
   },
   hero: {
-    lines: ['来自真实用户的', '不脱妆底气。'],
-    intro:
-      '听听她们如何告别补妆焦虑，从早高峰到深夜聚会，全天候保持精致与自信。',
+    // 🌟 改为对象数组，支持 accent 红色高亮
+    lines: [
+      { text: '来自真实用户的' },
+      { text: '不脱妆', accent: '底气。' }
+    ],
+    intro: '听听她们如何告别补妆焦虑，从早高峰到深夜聚会，全天候保持精致与自信。',
   },
   grid: {
     filterLabel: '按肤质筛选测评',
@@ -38,10 +41,12 @@ export const pricingPage = {
     description: `从体验装开始，或申请成为 Dopi 合作伙伴，找到最适合你的完美方案。`,
   },
   hero: {
-    lines: ['先试后买，', '或携手共赢。'],
-    accent: 1,
-    intro:
-      '所有套装均含正装保障与试用装。同时，我们开放特约代理与市级代理申请，期待与您共创美业未来。',
+    // 🌟 改为对象数组，移除旧的 accent: 1
+    lines: [
+      { text: '先试后买，' },
+      { text: '或携手', accent: '共赢。' }
+    ],
+    intro: '所有套装均含正装保障与试用装。同时，我们开放特约代理与市级代理申请，期待与您共创美业未来。',
   },
   plans: {
     monthly: '单次购买',
@@ -105,7 +110,11 @@ export const journalPage = {
     description: `Dopi 团队分享的底妆干货、持妆技巧与美妆趋势洞察。`,
   },
   hero: {
-    lines: ['关于完美底妆的', '每一个小细节。'],
+    // 🌟 改为对象数组，支持 accent 红色高亮
+    lines: [
+      { text: '关于完美底妆的' },
+      { text: '每一个', accent: '小细节。' }
+    ],
     intro: `来自 Dopi 美妆实验室的研究报告与干货文章，教你如何应对各种脱妆危机。`,
   },
   list: { title: '全部文章', filterLabel: '按主题筛选文章', empty: '该主题暂无文章，敬请期待。' },
@@ -118,8 +127,12 @@ export const aboutPage = {
     description: `Dopi 由一群热爱美妆的研发者创立，我们坚信：完美的底妆，应该从清晨持续到日暮。`,
   },
   hero: {
-    lines: ['我们致力于', '守护你', '每一个高光时刻。'],
-    accent: 2,
+    // 🌟 改为对象数组，移除旧的 accent: 2
+    lines: [
+      { text: '我们致力于' },
+      { text: '守护你' },
+      { text: '每一个', accent: '高光时刻。' }
+    ],
     intro: `Dopi 诞生于一个简单的愿望：让每一位女性都能拥有全天候的自信底妆。我们正在打造那款我们曾经梦寐以求的完美粉底液。`,
     image: '/images/about-hero.jpg',
     imageAlt: '清晨阳光下，展现自然光泽的健康肌肤特写',

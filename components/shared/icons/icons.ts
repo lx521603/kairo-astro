@@ -22,6 +22,7 @@ import shieldCheck from '@phosphor-icons/core/regular/shield-check.svg?raw';
 import sparkle from '@phosphor-icons/core/regular/sparkle.svg?raw';
 import x from '@phosphor-icons/core/regular/x.svg?raw';
 import xLogo from '@phosphor-icons/core/regular/x-logo.svg?raw';
+import instagramLogo from '@phosphor-icons/core/regular/instagram-logo.svg?raw';
 
 // 🌟 新增：引入真正的美妆相关图标
 import drop from '@phosphor-icons/core/regular/drop.svg?raw';
@@ -57,6 +58,7 @@ export const icons = {
   x,
   'x-logo': xLogo,
   // 🌟 新增：注册美妆图标
+  instagram: instagramLogo,
   drop,
   sun,
   heart,

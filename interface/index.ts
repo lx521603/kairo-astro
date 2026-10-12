@@ -11,7 +11,7 @@ export interface FooterGroup {
 export interface SocialLink {
   label: string;
   href: string;
-  icon: 'x' | 'linkedin' | 'github';
+  icon: 'x' | 'instragram' | 'github';
 }
 
 export interface Step {

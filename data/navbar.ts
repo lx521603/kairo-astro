@@ -7,7 +7,7 @@ export const navLinks: NavLink[] = [
   { label: '关于', href: '/about' },
 ];
 
-export const menuLinks: NavLink[] = [{ label: 'Home', href: '/' }, ...navLinks];
+export const menuLinks: NavLink[] = [{ label: '首页', href: '/' }, ...navLinks];
 
 export const routeLabels: Record<string, string> = {
   '/': 'Dopi',
