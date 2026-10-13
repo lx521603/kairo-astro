@@ -2,7 +2,7 @@
 import { cn } from '@/utils/cn';
 
 interface Props {
-  lines: string[];
+  lines: (string | { text: string; accent?: string })[];
   intro?: string;
   accent?: number;
   class?: string;
@@ -13,21 +13,21 @@ const { lines, intro, accent, class: className } = Astro.props;
 
 <section class={cn('shell pt-36 pb-14 md:pt-44 md:pb-20', className)}>
   <h1
-  class="font-display text-hero leading-[1.05] font-extrabold tracking-[-0.04em] text-bone"
-  data-split>
-  {lines.map((line) => (
-    <span class="block overflow-hidden pb-[0.06em]" data-hero-line>
-      <span class="block">
-        {typeof line === 'string' ? line : (
-          <>
-            {line.accent ? `${line.text} ` : line.text}
-            {line.accent && <span class="text-signal">{line.accent}</span>}
-          </>
-        )}
+    class="font-display text-hero leading-[1.05] font-extrabold tracking-[-0.04em] text-bone"
+    data-split>
+    {lines.map((line) => (
+      <span class="block overflow-hidden" data-hero-line>
+        <span class="block relative z-10">
+          {typeof line === 'string' ? line : (
+            <>
+              {line.accent ? `${line.text} ` : line.text}
+              {line.accent && <span class="text-signal">{line.accent}</span>}
+            </>
+          )}
+        </span>
       </span>
-    </span>
-  ))}
-</h1>
+    ))}
+  </h1>
   {(intro || Astro.slots.has('default')) && (
     <div class="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-12 md:items-end">
       {intro && (
