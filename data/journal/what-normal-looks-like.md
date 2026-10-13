@@ -6,9 +6,9 @@ date: '2025-08-19'
 readTime: 9 分钟阅读
 cover: /images/journal-light.jpg
 author:
-  name: 林博士
-  role: Dopi 首席研发科学家
-  image: /images/team-rafael.jpg
+  name: 薇薇
+  role: 模特 & 合伙人
+  image: /images/vv.webp
 ---
 
 传统粉底液的逻辑很简单：用最厚的粉去强行遮盖瑕疵。但这往往也是最让人难受的。它在夏天让你闷痘，在冬天让你卡粉，却对肌肤缓慢的氧化暗沉无能为力。

@@ -6,9 +6,9 @@ date: '2025-07-11'
 readTime: 4 min read
 cover: /images/journal-motion.jpg
 author:
-  name: 张博士
-  role: Dopi 首席研发官
-  image: /images/team-jonas.jpg
+  name: 陈艺萱
+  role: Dopi 创意总监
+  image: /images/team-lin.jpg
 ---
 
 市面上的美妆宣传往往辞藻华丽。但“听起来很美”并不等于“用起来很好”。早期在测试阶段，我们发现许多用户在看到“持妆 12 小时”的宣传后，依然会半信半疑地去翻看差评。

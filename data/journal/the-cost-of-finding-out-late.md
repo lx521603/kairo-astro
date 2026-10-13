@@ -7,7 +7,7 @@ readTime: 7 分钟阅读
 cover: /images/journal-noise.jpg
 author:
   name: 薇薇
-  role: Dopi 创始人
+  role: 模特 & 合伙人
   image: /images/vv.webp
 featured: true
 ---
