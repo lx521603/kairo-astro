@@ -2,7 +2,7 @@ import type { SiteConfig } from '@/interface';
 
 export const site: SiteConfig = {
   name: 'Dopi',
-  legalName: 'Dopi',
+  legalName: 'Dopi - Zaeth.com',
   url: 'https://zaeth.com',
   title: 'Dopi - 懂你的底妆专家',
   description:

@@ -26,7 +26,7 @@ export const footerCopy = {
   newsletter: {
     title: '订阅获取底妆干货、新品首发通知与会员专属优惠。',
     label: '电子邮箱',
-    placeholder: 'your@email.com',
+    placeholder: 'x@zaeth.com',
     note: '我们承诺拒绝垃圾邮件，随时可一键取消订阅。',
     loading: '订阅中...',
     success: '订阅成功！首封美妆指南与优惠券将发送至您的邮箱。',
