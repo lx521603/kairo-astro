@@ -147,7 +147,7 @@ export const aboutPage = {
     body: '数年打磨，一个坚定的信念：让脱妆成为历史。',
   },
   values: { title: '我们坚守的品牌理念。' },
-  team: { title: '幕后研发团队。' },
+  team: { title: '精彩瞬间' },
   roles: {
     title: '加入 Dopi。',
     body: '我们寻找热爱美妆、追求极致体验的伙伴，一起重新定义底妆标准。',

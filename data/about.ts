@@ -3,13 +3,13 @@ import type { Milestone, Role, TeamMember, Value } from '@/interface';
 
 export const milestones: Milestone[] = [
   {
-    year: '2021',
+    year: '2022',
     title: '从一次脱妆的尴尬开始',
     body: '创始人在一次重要会议上遭遇脱妆窘境，由此萌生了打造一款真正不脱妆粉底液的想法。调研了 214 位女性的底妆困扰。',
     image: '/images/about-city.jpg',
   },
   {
-    year: '2022',
+    year: '2023',
     title: '第一款配方诞生',
     body: '与 12 位皮肤科医生合作，历经 18 个月研发。首批 100 位测试用户，98% 反馈 12 小时不脱妆。',
     image: '/images/gallery-desk.jpg',
@@ -48,12 +48,12 @@ export const values: Value[] = [
 ];
 
 export const team: TeamMember[] = [
-  { name: '徐毛毛', role: '创始人 & CEO', image: '/images/team-amara.jpg' },
-  { name: '张博士', role: '首席研发官', image: '/images/team-jonas.jpg' },
-  { name: '陈艺萱', role: '创意总监', image: '/images/team-lin.jpg' },
-  { name: '麦克', role: '用户体验负责人', image: '/images/team-rafael.jpg' },
-  { name: '薇薇', role: '客户成功总监', image: '/images/team-sade.jpg' },
-  { name: '肖恩', role: '品牌战略顾问', image: '/images/team-viktor.jpg' },
+  { name: '薇薇', role: '模特 & 合伙人', image: '/images/TfH0okk1.webp' },
+  { name: 'Maggie', role: '用户', image: '/images/Q30A3919.webp' },
+  { name: '陈艺萱', role: '用户', image: '/images/Q30A3553.webp' },
+  { name: '玲', role: '用户', image: '/images/Q30A640@0.5x.webp' },
+  { name: '小新', role: '用户', image: '/images/Q30A3552.webp' },
+  { name: '苏菲', role: '品牌战略顾问', image: '/images/Q30A4354.webp' },
 ];
 
 export const roles: Role[] = [
