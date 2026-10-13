@@ -1,0 +1,44 @@
+---
+import { products } from '@/data/products';
+import Layout from '@/layouts/layout.astro';
+import ProductShowcase from '@/components/products/product.astro';
+---
+
+<Layout title="Dopi 核心产品系列" description="探索 Dopi 专为亚洲肌肤研发的核心单品。">
+  
+  <!-- 顶部 Hero -->
+  <section class="shell pt-36 pb-20 md:pt-44 md:pb-28">
+    <h1 class="font-display text-hero leading-[1.05] font-extrabold tracking-[-0.04em] text-bone">
+      <span class="block">不脱妆的<span class="text-signal">底气。</span></span>
+      <span class="block">底妆的终极<span class="text-signal">答案。</span></span>
+    </h1>
+    <div class="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-12 md:items-end">
+      <p class="max-w-[46ch] text-lead text-mute md:col-span-6 md:col-start-7 lg:col-span-5 lg:col-start-8">
+        专为亚洲肌肤研发，让你在任何时刻都从容自信；12 小时持妆，98% 回购率。数字不会说谎。
+      </p>
+    </div>
+  </section>
+
+  <!-- 循环渲染产品 -->
+  <div class="pb-32">
+    {products.map((product, index) => (
+      <ProductShowcase 
+        product={product} 
+        reverse={index % 2 !== 0} 
+      />
+    ))}
+  </div>
+
+  <!-- 底部 CTA -->
+  <section class="shell py-24 bg-ink-2 border-t border-line text-center">
+    <h2 class="font-display text-3xl font-bold text-bone mb-4">找到你的完美方案。</h2>
+    <p class="text-lead text-mute mb-8">立即免费申领体验装，或探索我们的周期订阅方案。</p>
+    <a 
+      href="/pricing" 
+      class="inline-flex items-center justify-center h-12 px-8 bg-signal text-bone font-bold rounded hover:bg-signal/90 transition-colors"
+    >
+      前往选购与合作
+    </a>
+  </section>
+
+</Layout>

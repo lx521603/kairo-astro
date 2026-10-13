@@ -1,0 +1,57 @@
+---
+interface Props {
+  product: {
+    id: string;
+    category: string;
+    name: string;
+    tagline: string;
+    description: string;
+    image: string;
+  };
+  reverse?: boolean;
+}
+
+const { product, reverse = false } = Astro.props;
+---
+
+<section class="shell py-20 md:py-32 border-t border-line" data-reveal>
+  <div class={`grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center ${reverse ? 'md:[&>*:first-child]:order-2' : ''}`}>
+    
+    <!-- 产品图片区 (与 about 的图片比例和圆角保持一致) -->
+    <div class="relative aspect-[4/5] overflow-hidden bg-ink-2 rounded-lg group">
+      <img 
+        src={product.image} 
+        alt={product.name} 
+        class="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+      />
+      <div class="absolute top-4 left-4">
+        <span class="px-3 py-1 text-xs font-mono uppercase tracking-wider bg-ink/80 text-bone backdrop-blur-sm rounded">
+          {product.category}
+        </span>
+      </div>
+    </div>
+
+    <!-- 产品信息区 (严格对齐 about 的排版层级) -->
+    <div class="flex flex-col justify-center">
+      <h2 class="font-display text-title leading-[1.1] font-extrabold tracking-[-0.02em] text-bone mb-4">
+        {product.name}
+      </h2>
+      <p class="text-xl text-signal font-medium mb-6">
+        {product.tagline}
+      </p>
+      <p class="text-lead text-mute mb-8 leading-relaxed">
+        {product.description}
+      </p>
+
+      <!-- 行动按钮 (对齐全局按钮风格) -->
+      <div>
+        <a 
+          href="/pricing" 
+          class="inline-flex items-center justify-center h-12 px-8 bg-signal text-bone font-bold rounded hover:bg-signal/90 transition-colors"
+        >
+          了解与选购
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
