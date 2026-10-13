@@ -11,8 +11,9 @@ export const site: SiteConfig = {
   careersEmail: 'x@zaeth.com',
   accent: '#ff5b1f',
   cta: {
-    primary: { label: '加入我们', href: '/pricing#sales' },
-    secondary: { label: '联系我', href: '/pricing?intent=demo#sales' },
+    // 👇 指向真实的 #sales，并用 ?intent= 传递意图
+    primary: { label: '加入我们', href: '/pricing?intent=join#sales' },
+    secondary: { label: '联系我', href: '/pricing?intent=contact#sales' },
   },
   socials: [
     { label: 'X', href: 'https://x.com', icon: 'x' },

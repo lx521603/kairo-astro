@@ -153,3 +153,35 @@ const field =
     </form>
   </div>
 </section>
+<script is:inline>
+  function handleIntentParam() {
+    // 1. 读取 URL 中的 intent 参数 (例如 ?intent=contact)
+    const urlParams = new URLSearchParams(window.location.search);
+    const intent = urlParams.get('intent');
+    
+    // 2. 检查是否是有效的 intent
+    if (intent === 'join' || intent === 'contact' || intent === 'follow') {
+      const targetInput = document.querySelector(`input[name="intent"][value="${intent}"]`);
+      
+      if (targetInput) {
+        // 3. 选中并触发 change 事件，让原模板切换内容
+        targetInput.checked = true;
+        targetInput.dispatchEvent(new Event('change', { bubbles: true }));
+        
+        // 4. 额外保障：如果浏览器原生滚动被拦截，我们在内容切换后强制滚动一次
+        setTimeout(() => {
+          const formSection = document.getElementById('sales');
+          if (formSection) {
+            formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 300); // 300ms 等待原模板的 DOM 显隐切换完成
+      }
+    }
+  }
+
+  // 页面加载时执行（处理从其他页面跳转，或同页面刷新）
+  document.addEventListener('DOMContentLoaded', handleIntentParam);
+  
+  // 监听 popstate (浏览器前进/后退按钮)
+  window.addEventListener('popstate', handleIntentParam);
+</script>
