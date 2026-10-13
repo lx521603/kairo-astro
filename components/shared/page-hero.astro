@@ -12,13 +12,13 @@ const { lines, intro, accent, class: className } = Astro.props;
 ---
 
 <section class={cn('shell pt-36 pb-14 md:pt-44 md:pb-20', className)}>
-  <h1
-    class="font-display text-hero leading-[1.05] font-extrabold tracking-[-0.04em] text-bone"
-    data-split>
+  <h1 class="font-display text-hero leading-[1.05] font-extrabold tracking-[-0.04em] text-bone">
     {lines.map((line) => (
-      <span class="block overflow-hidden" data-hero-line>
-        <span class="block relative z-10">
-          {typeof line === 'string' ? line : (
+      <span class="block overflow-hidden pb-[0.06em]" data-hero-line>
+        <span class="block">
+          {typeof line === 'string' ? (
+            line
+          ) : (
             <>
               {line.accent ? `${line.text} ` : line.text}
               {line.accent && <span class="text-signal">{line.accent}</span>}
