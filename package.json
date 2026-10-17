@@ -33,20 +33,20 @@
     "@astrojs/check": "^0.9.10",
     "@phosphor-icons/core": "^2.1.1",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.5",
+    "astro": "^7.4.0",
     "clsx": "^2.1.1",
     "gsap": "^3.15.0",
-    "lenis": "^1.3.26",
+    "lenis": "^1.3.27",
     "number-flow": "^0.6.2",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.5",
     "tailwind-merge": "^3.7.0",
     "tailwindcss": "^4.3.3",
-    "typescript": "~5.9.3"
+    "typescript": "~7.0.2"
   },
   "devDependencies": {
-    "@types/node": "^26.6.3",
-    "prettier": "^3.9.9",
-    "prettier-plugin-astro": "^1.1.0",
+    "@types/node": "^26.6.5",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1",
     "prettier-plugin-tailwindcss": "^0.8.1"
   },
   "allowScripts": {
